@@ -1,0 +1,21 @@
+<div class="container">
+    <table class="table table-hover table-striped">
+        <caption>List of Students</caption>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let studen of student"> 
+                <td>{{studen.id}}</td>
+                <td>{{studen.name}}</td>
+                <td>{{studen.course}}</td>
+                <td>{{studen.email}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
