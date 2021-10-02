@@ -27,5 +27,5 @@ workflows:
             - run: npm run build
             - aws-s3/copy:
                 from: dist/
-                to: s3://sample-app-angular
+                to: s3://sample-app-vue
                 arguments: --recursive
